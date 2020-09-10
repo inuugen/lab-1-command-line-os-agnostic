@@ -16,8 +16,8 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-
-
+Applications    Documents       Library         Music           Public
+Desktop         Downloads       Movies          Pictures
 
 ==========
 2a. Type: 
@@ -26,19 +26,20 @@ $ ls D<TAB>
 
 What happens?  Describe it below.
 ----------
-
-
+I have to click tab twice for this - Its show my Desktop/   Documents/ Downloads/ 
 
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
 ----------
-
+Ivys-MacBook-Pro:~ ivy$ ls D
+Desktop/   Documents/ Downloads/ 
 
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
 ----------
-
+ls: D: No such file or directory
+Ivys-MacBook-Pro:~ ivy$ 
 
 
 ==========
@@ -48,7 +49,8 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-
+total 0
+drwxr-xr-x@ 2 ivy  staff  64 Aug 12 14:02 Zoom
 
 
 ==========
@@ -59,7 +61,9 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+Ivys-MacBook-Pro:~ ivy$ ls -a Documents
+.               ..              .DS_Store       .localized      Zoom
+Ivys-MacBook-Pro:~ ivy$ 
 
 ==========
 5.  Type:
@@ -69,7 +73,7 @@ Copy and paste the first *two lines* of output below.
 What command was repeated?
 ----------
 
-
+Ivys-MacBook-Pro:~ ivy$ ls -a Documents
 
 ==========
 6.  Type:
@@ -79,7 +83,11 @@ What command was repeated?
 What command was repeated?
 ----------
 
-
+Ivys-MacBook-Pro:~ ivy$ ls -a Documents
+.               ..              .DS_Store       .localized      Zoom
+Ivys-MacBook-Pro:~ ivy$ ls -l Documents
+total 0
+drwxr-xr-x@ 2 ivy  staff  64 Aug 12 14:02 Zoom
 
 ==========
 7.  Type:
@@ -88,8 +96,12 @@ $ ls /b<TAB><ENTER>
 
 What is the result of pressing tab?
 ----------
-
-
+I dont know what I did wrong here.
+Ivys-MacBook-Pro:~ ivy$ 
+Display all 1391 possibilities? (y or n)
+then I type ls /b<TAB><ENTER> its show 
+bash: syntax error near unexpected token `newline'
+Ivys-MacBook-Pro:~ ivy$ 
 
 ==========
 8.  Type:
@@ -99,19 +111,19 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-
+ls: doesnotexist: No such file or directory
 
 ==========
 9.  What key do I press to go to the previous command?
 ----------
 
-
+UP arrow 
 
 ==========
 10.  Name two flags that we used in this exercise.
 ----------
 
-
+ls and -1 ?????
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
@@ -122,14 +134,14 @@ Copy and paste the output below.
 ==========
 12.  What was the main command that we used throughout this exercise?
 ----------
-
+ls 
 
 
 ==========
 13.  Name one argument that we passed to the command.
 ----------
 
-
+Documents
 
 ==========
 14.  Type:
@@ -139,7 +151,7 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
+bash: foo: command not found
 
 ==========
 15.  Type:
@@ -148,7 +160,7 @@ Copy and paste the output below.
 
 Copy and paste the output below.
 ----------
-
+bash: foo: command not found
 
 
 ==========
@@ -158,3 +170,7 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
+ls is the command
+-a is the flag 
+Desktop is the argument
+ls -a Desktop is the prompt
