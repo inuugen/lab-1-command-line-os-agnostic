@@ -30,7 +30,8 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/Users/ivy/desktop/mtec1003
+Ivys-MBP:mtec1003 ivy$ 
 
 
 ==========
@@ -41,9 +42,10 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
-
-
+Ivys-MBP:mtec1003 ivy$ mkdir animals
+Ivys-MBP:mtec1003 ivy$ ls
+animals
+Ivys-MBP:mtec1003 ivy$ 
 ==========
 6. Type:
 
@@ -52,7 +54,10 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+Ivys-MBP:mtec1003 ivy$ mkdir food
+Ivys-MBP:mtec1003 ivy$ ls
+animals	food
+Ivys-MBP:mtec1003 ivy$ 
 
 
 ==========
@@ -64,6 +69,10 @@ $ ls
 Copy and paste the output below.
 ----------
 
+Ivys-MBP:mtec1003 ivy$ mkdir -p foo/bar/baz/qux
+Ivys-MBP:mtec1003 ivy$ ls
+animals	foo	food
+Ivys-MBP:mtec1003 ivy$ 
 
 
 ==========
@@ -75,7 +84,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+Ivys-MBP:mtec1003 ivy$ cd foo/bar/baz/qux
+Ivys-MBP:qux ivy$ pwd
+/Users/ivy/desktop/mtec1003/foo/bar/baz/qux
+Ivys-MBP:qux ivy$ 
 
 ==========
 9. Type:
@@ -86,7 +98,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+Ivys-MBP:qux ivy$ cd ../..
+Ivys-MBP:bar ivy$ pwd
+/Users/ivy/desktop/mtec1003/foo/bar
+Ivys-MBP:bar ivy$ 
 
 ==========
 10. Type:
@@ -96,7 +111,11 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+Ivys-MBP:bar ivy$ cd -
+/Users/ivy/desktop/mtec1003/foo/bar/baz/qux
+Ivys-MBP:qux ivy$ pwd
+/Users/ivy/desktop/mtec1003/foo/bar/baz/qux
+Ivys-MBP:qux ivy$ 
 
  
 ==========
@@ -107,7 +126,10 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+Ivys-MBP:qux ivy$ cd ../../../..
+Ivys-MBP:mtec1003 ivy$ pwd
+/Users/ivy/desktop/mtec1003
+Ivys-MBP:mtec1003 ivy$ 
 
 
 ==========
@@ -120,7 +142,8 @@ $ ls -l
 Copy and paste the first two lines from the output into the space below.
 ----------
 
-
+drwxr-xr-x  3 ivy  staff  96 Sep 22 14:21 foo
+drwxr-xr-x  2 ivy  staff  64 Sep 22 14:20 food
 
 ==========
 13. Type:
@@ -130,7 +153,10 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+Ivys-MBP:mtec1003 ivy$ cd ~
+Ivys-MBP:~ ivy$ pwd
+/Users/ivy
+Ivys-MBP:~ ivy$ 
 
 
 ==========
@@ -141,7 +167,10 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+Ivys-MBP:~ ivy$ cd / Volumes
+Ivys-MBP:/ ivy$ pwd
+/
+Ivys-MBP:/ ivy$ 
 
 
 ==========
@@ -153,7 +182,11 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+Ivys-MBP:/ ivy$ cd /unknown_folder
+-bash: cd: /unknown_folder: No such file or directory
+Ivys-MBP:/ ivy$ pwd
+/
+Ivys-MBP:/ ivy$ 
 
 ==========
 15. Type:
@@ -163,14 +196,18 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/
+Ivys-MBP:/ ivy$ cd ~/mtec1003
+Ivys-MBP:mtec1003 ivy$ pwd
+/Users/ivy/mtec1003
+Ivys-MBP:mtec1003 ivy$ 
 
 
 ==========
 16a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+pwd
 
 ==========
 16b. If you're not in the right directory, type the following command:
@@ -193,7 +230,7 @@ lemon
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
 
-
+Ivys-MBP:mtec1003 ivy$ mkdir -p pineapple/orange/strawberry/lemon
 
 ==========
 18. Make another directory called aardvark.  
@@ -201,15 +238,21 @@ Use only one command to make all of these new directories.  Write what command y
 Write the command you used to create the directory below:
 ----------
 
+Ivys-MBP:mtec1003 ivy$ mkdir aardvark
+Ivys-MBP:mtec1003 ivy$ ls
+aardvark	animals		pineapple
 
 
 ==========
 19. List the files and directories in the current directory using the long format.  
 
-What is the modified date of the aardvark directory?
+What is the modified date of the aardvark directory?Sep 22 14:48
 ----------
-
-
+Ivys-MBP:mtec1003 ivy$ ls -l
+total 0
+drwxr-xr-x  2 ivy  staff   64 Sep 22 14:48 aardvark
+drwxr-xr-x  2 ivy  staff   64 Sep 22 13:53 animals
+drwxr-xr-x  4 ivy  staff  128 Sep 22 14:34 pineapple
 
 ==========
 20. Make 3 directories nested within each other:
@@ -218,15 +261,15 @@ What is the modified date of the aardvark directory?
 * bar should be the inside foo
 * baz should be inside bar
 
-What command did you use?
+What command did you use? mkdir -p
 ----------
 
-
+Ivys-MBP:mtec1003 ivy$ mkdir -p foo/bar/baz
 
 ==========
 21. Change your directory so that you're in the inner most directory (baz)
 
-What command did you use?
+What command did you use? cd baz
 ----------
 
 
@@ -234,46 +277,47 @@ What command did you use?
 ==========
 22. Change your directory so that you're two directories up (foo)
 
-What command did you use?
+What command did you use? Ivys-MBP:bar ivy$ cd ~/ mtec1003
+Ivys-MBP:~ ivy$ 
 ----------
 
 
 ==========
-23. What command is used to delete empty directories?
-----------
-
-
-
-==========
-24. What command is used to print out your current working directory?
+23. What command is used to delete empty directories? rmdir
 ----------
 
 
 
 ==========
-25. What flag do I pass to ls to print out all files?
+24. What command is used to print out your current working directory? ls -l
 ----------
 
 
 
 ==========
-26. What's the shortcut for home directory?
+25. What flag do I pass to ls to print out all files? -p 
 ----------
 
 
 
 ==========
-27. What's a pathname?
+26. What's the shortcut for home directory? cd~
 ----------
 
 
 
 ==========
-28. What's a directory?
+27. What's a pathname? name of the path. It's a location in the file system.
 ----------
 
 
 
 ==========
-29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
+28. What's a directory? directory is a folder - access a folder meaning accessing a directory.
+----------
+
+==========
+29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory? cd Dowloads 
+Ivys-MBP:~ ivy$ cd Downloads
+Ivys-MBP:Downloads ivy$ 
 ----------
